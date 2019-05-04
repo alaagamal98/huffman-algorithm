@@ -1,9 +1,5 @@
 # Huffman-Compression-Algorithm
-## Team 5
-* Asmaa Mahmoud Mahmoud
-* Alaa Gamal Abdelaziz
-* Salma Mohamed Zakaria
-* Marwa Adel Yousef
+
 ## How to Compile :
 * We used CMake to make the compiling easier and less time consuming.
 1. create a ```build``` folder and open it.
