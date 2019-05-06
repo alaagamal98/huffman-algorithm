@@ -59,10 +59,4 @@
 * In this file by calling some functions from our header files it decompresses any compressed file to its original size without any loss of data.
  ## Target :
   * Minimizing the size of the file while the data inside it is kept constant and return it back when we need that.
-## Problems we have faced :
-1. Using extern function to call a variable inside another file.
-2. Serializing the tree with both data and frequency inside it.
-3. Saving a binary string as binary bits not bytes.
-
-
 
