@@ -1,5 +1,9 @@
 # Huffman-Compression-Algorithm
-
+## Team 5
+* Asmaa Mahmoud Mahmoud
+* Alaa Gamal Abdelaziz
+* Salma Mohamed Zakaria
+* Marwa Adel Yousef
 ## How to Compile :
 * We used CMake to make the compiling easier and less time consuming.
 1. create a ```build``` folder and open it.
@@ -14,7 +18,7 @@
 * And we were able to decompress the file to its original file without any losses to its original size.
 ## Explanation of Huffman :
 
-![picture](HuffmanCoding.jpg)
+![picture](images/HuffmanCoding.jpg)
 * A minimal variable-length character coding based on the frequency of each character. First, each character becomes a one-node binary tree, with the character as the only node. The character's frequency is the tree's frequency. Two trees with the least frequencies are joined as the subtrees of a new root that is assigned the sum of their frequencies. Repeat until all characters are in one tree. One code bit represents each level. Thus more frequent characters are near the root and are coded with few bits, and rare characters are far from the root and are coded with many bits.
 
 ## Header Files:
@@ -23,7 +27,7 @@
 
 1. makeTree :
 
-![picture](tree.png)
+![picture](images/tree.png)
  * Create a leaf node for each unique character and build a min heap of all leaf nodes (min heap is used as a priority queue) The value of frequency field is used to compare two nodes in min heap. Initially, the least frequent character is at root.
 
  * Extract two nodes with the minimum frequency from the min heap.
@@ -44,7 +48,7 @@
  * We used pointer to the root of the huffman tree and a bineary coded string to decode.
  * We return the file to its original case.
  ### SerializeTree.hpp
- ![picture](serializationFile-1.jpg)
+ ![picture](images/serializationFile-1.jpg)
 * The functions in this file transmits the tree's data and frequencies needed for the decompression file to an external file so the tree would be reachable in the decompression file without needing to look at the input text which is called serialization and deserialization.
 ### Helpers.hpp
 * The functions in this file assists the main coding files in transmitting the data from and to the code, and converting the data to different forms.
